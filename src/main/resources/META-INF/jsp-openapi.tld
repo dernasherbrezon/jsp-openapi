@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib 
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+    version="2.1">
+
+    <display-name>JspOpenapi</display-name>    
+    <tlib-version>1.0</tlib-version>
+    <short-name>JspOpenapi</short-name>
+    <uri>https://github.com/dernasherbrezon/jsp-openapi</uri>
+
+	<tag-file>
+		<description>Tag for rendering OpenAPI specification using bootstrap4</description>
+		<display-name>jsp-openapi</display-name>
+		<name>bootstrap4-openapi</name>
+		<path>/META-INF/tags/bootstrap4-openapi.tag</path>
+	</tag-file>
+    
+</taglib>
