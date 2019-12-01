@@ -9,7 +9,7 @@
   		</c:when>
 		<c:otherwise>
 			<div class="col-md-12">
-				<h1 class="pb-2 mt-4 mb-2 border-bottom">${openapi.info.title}&nbsp<span class="badge badge-secondary">${openapi.info.version}</span>
+				<h1 class="pb-2 mt-4 mb-2 border-bottom">${openapi.info.title}&nbsp;<span class="badge badge-secondary">${openapi.info.version}</span>
 				</h1>
 				<p>
 					<c:out value="${openapi.info.description}" />

@@ -21,7 +21,7 @@
 		
 		
 			<div class="col-md-12">
-				<h1 class="pb-2 mt-4 mb-2 border-bottom">Swagger Petstore&nbsp<span class="badge badge-secondary">1.0.0</span>
+				<h1 class="pb-2 mt-4 mb-2 border-bottom">Swagger Petstore&nbsp;<span class="badge badge-secondary">1.0.0</span>
 				</h1>
 				<p>
 					This is a sample server Petstore server.  You can find out more about     Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).      For this sample, you can use the api key `special-key` to test the authorization     filters.
@@ -2298,243 +2298,36 @@
 							</div>
 							<div id="collapseSchema0" class="collapse" aria-labelledby="headingSchema0" data-parent="#accordionSchemas">
 								<div class="card-body">
-									<pre class="text-white bg-dark"><code>this is test: class ObjectSchema {
-    class Schema {
-        type: object
-        format: null
-        $ref: null
-        description: null
-        title: null
-        multipleOf: null
-        maximum: null
-        exclusiveMaximum: null
-        minimum: null
-        exclusiveMinimum: null
-        maxLength: null
-        minLength: null
-        pattern: null
-        maxItems: null
-        minItems: null
-        uniqueItems: null
-        maxProperties: null
-        minProperties: null
-        required: null
-        not: null
-        properties: {id=class IntegerSchema {
-            class Schema {
-                type: integer
-                format: int64
-                $ref: null
-                description: null
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: null
-            }
-        }, petId=class IntegerSchema {
-            class Schema {
-                type: integer
-                format: int64
-                $ref: null
-                description: null
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: null
-            }
-        }, quantity=class IntegerSchema {
-            class Schema {
-                type: integer
-                format: int32
-                $ref: null
-                description: null
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: null
-            }
-        }, shipDate=class DateTimeSchema {
-            class Schema {
-                type: string
-                format: date-time
-                $ref: null
-                description: null
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: null
-            }
-        }, status=class StringSchema {
-            class Schema {
-                type: string
-                format: null
-                $ref: null
-                description: Order Status
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: null
-            }
-        }, complete=class BooleanSchema {
-            class Schema {
-                type: boolean
-                format: null
-                $ref: null
-                description: null
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: null
-            }
-        }}
-        additionalProperties: null
-        nullable: null
-        readOnly: null
-        writeOnly: null
-        example: null
-        externalDocs: null
-        deprecated: null
-        discriminator: null
-        xml: class XML {
-            name: Order
-            namespace: null
-            prefix: null
-            attribute: null
-            wrapped: null
-        }
-    }
+									<pre class="text-white bg-dark"><code>{
+  "id": {
+    "type": "integer",
+    "format": "int64"
+  },
+  "petId": {
+    "type": "integer",
+    "format": "int64"
+  },
+  "quantity": {
+    "type": "integer",
+    "format": "int32"
+  },
+  "shipDate": {
+    "type": "string",
+    "format": "date-time"
+  },
+  "status": {
+    "type": "string",
+    "description": "Order Status",
+    "enum": [
+      "placed",
+      "approved",
+      "delivered"
+    ]
+  },
+  "complete": {
+    "default": false,
+    "type": "boolean"
+  }
 }</code></pre>
 								</div>
 							</div>
@@ -2548,111 +2341,14 @@
 							</div>
 							<div id="collapseSchema1" class="collapse" aria-labelledby="headingSchema1" data-parent="#accordionSchemas">
 								<div class="card-body">
-									<pre class="text-white bg-dark"><code>this is test: class ObjectSchema {
-    class Schema {
-        type: object
-        format: null
-        $ref: null
-        description: null
-        title: null
-        multipleOf: null
-        maximum: null
-        exclusiveMaximum: null
-        minimum: null
-        exclusiveMinimum: null
-        maxLength: null
-        minLength: null
-        pattern: null
-        maxItems: null
-        minItems: null
-        uniqueItems: null
-        maxProperties: null
-        minProperties: null
-        required: null
-        not: null
-        properties: {id=class IntegerSchema {
-            class Schema {
-                type: integer
-                format: int64
-                $ref: null
-                description: null
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: null
-            }
-        }, name=class StringSchema {
-            class Schema {
-                type: string
-                format: null
-                $ref: null
-                description: null
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: null
-            }
-        }}
-        additionalProperties: null
-        nullable: null
-        readOnly: null
-        writeOnly: null
-        example: null
-        externalDocs: null
-        deprecated: null
-        discriminator: null
-        xml: class XML {
-            name: Category
-            namespace: null
-            prefix: null
-            attribute: null
-            wrapped: null
-        }
-    }
+									<pre class="text-white bg-dark"><code>{
+  "id": {
+    "type": "integer",
+    "format": "int64"
+  },
+  "name": {
+    "type": "string"
+  }
 }</code></pre>
 								</div>
 							</div>
@@ -2666,309 +2362,34 @@
 							</div>
 							<div id="collapseSchema2" class="collapse" aria-labelledby="headingSchema2" data-parent="#accordionSchemas">
 								<div class="card-body">
-									<pre class="text-white bg-dark"><code>this is test: class ObjectSchema {
-    class Schema {
-        type: object
-        format: null
-        $ref: null
-        description: null
-        title: null
-        multipleOf: null
-        maximum: null
-        exclusiveMaximum: null
-        minimum: null
-        exclusiveMinimum: null
-        maxLength: null
-        minLength: null
-        pattern: null
-        maxItems: null
-        minItems: null
-        uniqueItems: null
-        maxProperties: null
-        minProperties: null
-        required: null
-        not: null
-        properties: {id=class IntegerSchema {
-            class Schema {
-                type: integer
-                format: int64
-                $ref: null
-                description: null
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: null
-            }
-        }, username=class StringSchema {
-            class Schema {
-                type: string
-                format: null
-                $ref: null
-                description: null
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: null
-            }
-        }, firstName=class StringSchema {
-            class Schema {
-                type: string
-                format: null
-                $ref: null
-                description: null
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: null
-            }
-        }, lastName=class StringSchema {
-            class Schema {
-                type: string
-                format: null
-                $ref: null
-                description: null
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: null
-            }
-        }, email=class StringSchema {
-            class Schema {
-                type: string
-                format: null
-                $ref: null
-                description: null
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: null
-            }
-        }, password=class StringSchema {
-            class Schema {
-                type: string
-                format: null
-                $ref: null
-                description: null
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: null
-            }
-        }, phone=class StringSchema {
-            class Schema {
-                type: string
-                format: null
-                $ref: null
-                description: null
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: null
-            }
-        }, userStatus=class IntegerSchema {
-            class Schema {
-                type: integer
-                format: int32
-                $ref: null
-                description: User Status
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: null
-            }
-        }}
-        additionalProperties: null
-        nullable: null
-        readOnly: null
-        writeOnly: null
-        example: null
-        externalDocs: null
-        deprecated: null
-        discriminator: null
-        xml: class XML {
-            name: User
-            namespace: null
-            prefix: null
-            attribute: null
-            wrapped: null
-        }
-    }
+									<pre class="text-white bg-dark"><code>{
+  "id": {
+    "type": "integer",
+    "format": "int64"
+  },
+  "username": {
+    "type": "string"
+  },
+  "firstName": {
+    "type": "string"
+  },
+  "lastName": {
+    "type": "string"
+  },
+  "email": {
+    "type": "string"
+  },
+  "password": {
+    "type": "string"
+  },
+  "phone": {
+    "type": "string"
+  },
+  "userStatus": {
+    "type": "integer",
+    "description": "User Status",
+    "format": "int32"
+  }
 }</code></pre>
 								</div>
 							</div>
@@ -2982,111 +2403,14 @@
 							</div>
 							<div id="collapseSchema3" class="collapse" aria-labelledby="headingSchema3" data-parent="#accordionSchemas">
 								<div class="card-body">
-									<pre class="text-white bg-dark"><code>this is test: class ObjectSchema {
-    class Schema {
-        type: object
-        format: null
-        $ref: null
-        description: null
-        title: null
-        multipleOf: null
-        maximum: null
-        exclusiveMaximum: null
-        minimum: null
-        exclusiveMinimum: null
-        maxLength: null
-        minLength: null
-        pattern: null
-        maxItems: null
-        minItems: null
-        uniqueItems: null
-        maxProperties: null
-        minProperties: null
-        required: null
-        not: null
-        properties: {id=class IntegerSchema {
-            class Schema {
-                type: integer
-                format: int64
-                $ref: null
-                description: null
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: null
-            }
-        }, name=class StringSchema {
-            class Schema {
-                type: string
-                format: null
-                $ref: null
-                description: null
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: null
-            }
-        }}
-        additionalProperties: null
-        nullable: null
-        readOnly: null
-        writeOnly: null
-        example: null
-        externalDocs: null
-        deprecated: null
-        discriminator: null
-        xml: class XML {
-            name: Tag
-            namespace: null
-            prefix: null
-            attribute: null
-            wrapped: null
-        }
-    }
+									<pre class="text-white bg-dark"><code>{
+  "id": {
+    "type": "integer",
+    "format": "int64"
+  },
+  "name": {
+    "type": "string"
+  }
 }</code></pre>
 								</div>
 							</div>
@@ -3100,319 +2424,47 @@
 							</div>
 							<div id="collapseSchema4" class="collapse" aria-labelledby="headingSchema4" data-parent="#accordionSchemas">
 								<div class="card-body">
-									<pre class="text-white bg-dark"><code>this is test: class ObjectSchema {
-    class Schema {
-        type: object
-        format: null
-        $ref: null
-        description: null
-        title: null
-        multipleOf: null
-        maximum: null
-        exclusiveMaximum: null
-        minimum: null
-        exclusiveMinimum: null
-        maxLength: null
-        minLength: null
-        pattern: null
-        maxItems: null
-        minItems: null
-        uniqueItems: null
-        maxProperties: null
-        minProperties: null
-        required: [name, photoUrls]
-        not: null
-        properties: {id=class IntegerSchema {
-            class Schema {
-                type: integer
-                format: int64
-                $ref: null
-                description: null
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: null
-            }
-        }, category=class Schema {
-            type: null
-            format: null
-            $ref: #/components/schemas/Category
-            description: null
-            title: null
-            multipleOf: null
-            maximum: null
-            exclusiveMaximum: null
-            minimum: null
-            exclusiveMinimum: null
-            maxLength: null
-            minLength: null
-            pattern: null
-            maxItems: null
-            minItems: null
-            uniqueItems: null
-            maxProperties: null
-            minProperties: null
-            required: null
-            not: null
-            properties: null
-            additionalProperties: null
-            nullable: null
-            readOnly: null
-            writeOnly: null
-            example: null
-            externalDocs: null
-            deprecated: null
-            discriminator: null
-            xml: null
-        }, name=class StringSchema {
-            class Schema {
-                type: string
-                format: null
-                $ref: null
-                description: null
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: doggie
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: null
-            }
-        }, photoUrls=class ArraySchema {
-            class Schema {
-                type: array
-                format: null
-                $ref: null
-                description: null
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: class XML {
-                    name: photoUrl
-                    namespace: null
-                    prefix: null
-                    attribute: null
-                    wrapped: true
-                }
-            }
-            items: class StringSchema {
-                class Schema {
-                    type: string
-                    format: null
-                    $ref: null
-                    description: null
-                    title: null
-                    multipleOf: null
-                    maximum: null
-                    exclusiveMaximum: null
-                    minimum: null
-                    exclusiveMinimum: null
-                    maxLength: null
-                    minLength: null
-                    pattern: null
-                    maxItems: null
-                    minItems: null
-                    uniqueItems: null
-                    maxProperties: null
-                    minProperties: null
-                    required: null
-                    not: null
-                    properties: null
-                    additionalProperties: null
-                    nullable: null
-                    readOnly: null
-                    writeOnly: null
-                    example: null
-                    externalDocs: null
-                    deprecated: null
-                    discriminator: null
-                    xml: null
-                }
-            }
-        }, tags=class ArraySchema {
-            class Schema {
-                type: array
-                format: null
-                $ref: null
-                description: null
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: class XML {
-                    name: tag
-                    namespace: null
-                    prefix: null
-                    attribute: null
-                    wrapped: true
-                }
-            }
-            items: class Schema {
-                type: null
-                format: null
-                $ref: #/components/schemas/Tag
-                description: null
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: null
-            }
-        }, status=class StringSchema {
-            class Schema {
-                type: string
-                format: null
-                $ref: null
-                description: pet status in the store
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: null
-            }
-        }}
-        additionalProperties: null
-        nullable: null
-        readOnly: null
-        writeOnly: null
-        example: null
-        externalDocs: null
-        deprecated: null
-        discriminator: null
-        xml: class XML {
-            name: Pet
-            namespace: null
-            prefix: null
-            attribute: null
-            wrapped: null
-        }
+									<pre class="text-white bg-dark"><code>{
+  "id": {
+    "type": "integer",
+    "format": "int64"
+  },
+  "category": {
+    "$ref": "#/components/schemas/Category"
+  },
+  "name": {
+    "type": "string",
+    "example": "doggie"
+  },
+  "photoUrls": {
+    "items": {
+      "type": "string"
+    },
+    "type": "array",
+    "xml": {
+      "name": "photoUrl",
+      "wrapped": true
     }
+  },
+  "tags": {
+    "items": {
+      "$ref": "#/components/schemas/Tag"
+    },
+    "type": "array",
+    "xml": {
+      "name": "tag",
+      "wrapped": true
+    }
+  },
+  "status": {
+    "type": "string",
+    "description": "pet status in the store",
+    "enum": [
+      "available",
+      "pending",
+      "sold"
+    ]
+  }
 }</code></pre>
 								</div>
 							</div>
@@ -3426,138 +2478,17 @@
 							</div>
 							<div id="collapseSchema5" class="collapse" aria-labelledby="headingSchema5" data-parent="#accordionSchemas">
 								<div class="card-body">
-									<pre class="text-white bg-dark"><code>this is test: class ObjectSchema {
-    class Schema {
-        type: object
-        format: null
-        $ref: null
-        description: null
-        title: null
-        multipleOf: null
-        maximum: null
-        exclusiveMaximum: null
-        minimum: null
-        exclusiveMinimum: null
-        maxLength: null
-        minLength: null
-        pattern: null
-        maxItems: null
-        minItems: null
-        uniqueItems: null
-        maxProperties: null
-        minProperties: null
-        required: null
-        not: null
-        properties: {code=class IntegerSchema {
-            class Schema {
-                type: integer
-                format: int32
-                $ref: null
-                description: null
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: null
-            }
-        }, type=class StringSchema {
-            class Schema {
-                type: string
-                format: null
-                $ref: null
-                description: null
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: null
-            }
-        }, message=class StringSchema {
-            class Schema {
-                type: string
-                format: null
-                $ref: null
-                description: null
-                title: null
-                multipleOf: null
-                maximum: null
-                exclusiveMaximum: null
-                minimum: null
-                exclusiveMinimum: null
-                maxLength: null
-                minLength: null
-                pattern: null
-                maxItems: null
-                minItems: null
-                uniqueItems: null
-                maxProperties: null
-                minProperties: null
-                required: null
-                not: null
-                properties: null
-                additionalProperties: null
-                nullable: null
-                readOnly: null
-                writeOnly: null
-                example: null
-                externalDocs: null
-                deprecated: null
-                discriminator: null
-                xml: null
-            }
-        }}
-        additionalProperties: null
-        nullable: null
-        readOnly: null
-        writeOnly: null
-        example: null
-        externalDocs: null
-        deprecated: null
-        discriminator: null
-        xml: null
-    }
+									<pre class="text-white bg-dark"><code>{
+  "code": {
+    "type": "integer",
+    "format": "int32"
+  },
+  "type": {
+    "type": "string"
+  },
+  "message": {
+    "type": "string"
+  }
 }</code></pre>
 								</div>
 							</div>
