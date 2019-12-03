@@ -1,8 +1,10 @@
 package ru.r2cloud.openapi;
 
-import java.io.BufferedWriter;
+import static org.junit.Assert.assertEquals;
+
+import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileWriter;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Locale;
@@ -48,17 +50,14 @@ public class Bootstrap4OpenapiTest {
 		request.setURI("/" + pageName + ".jsp");
 		response = HttpTester.parseResponse(HttpTester.from(localConnector.getResponse(request.generate())));
 
-		try (BufferedWriter w = new BufferedWriter(new FileWriter("./src/test/resources/expected/" + pageName + ".html"))) {
-			w.write(response.getContent());
+		StringBuilder expected = new StringBuilder();
+		try (BufferedReader r = new BufferedReader(new InputStreamReader(this.getClass().getResourceAsStream("/expected/" + pageName + ".html")))) {
+			String curLine = null;
+			while ((curLine = r.readLine()) != null) {
+				expected.append(curLine).append("\n");
+			}
 		}
-		// StringBuilder expected = new StringBuilder();
-		// try (BufferedReader r = new BufferedReader(new InputStreamReader(this.getClass().getResourceAsStream("/expected/" + pageName + ".txt")))) {
-		// String curLine = null;
-		// while ((curLine = r.readLine()) != null) {
-		// expected.append(curLine).append("\n");
-		// }
-		// }
-		// assertEquals(expected.toString().trim(), response.getContent());
+		assertEquals(expected.toString(), response.getContent());
 	}
 
 	@Before

@@ -1,4 +1,4 @@
-<%@ tag pageEncoding="UTF-8"%>
+<%@ tag pageEncoding="UTF-8" trimDirectiveWhitespaces="true"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="openapiHelper" uri="https://github.com/dernasherbrezon/jsp-openapi"%>
 <%@ attribute name="openapi" required="true" rtexprvalue="true" type="io.swagger.v3.oas.models.OpenAPI"%>
