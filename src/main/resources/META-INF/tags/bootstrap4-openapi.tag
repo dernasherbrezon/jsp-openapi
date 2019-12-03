@@ -131,10 +131,10 @@
 												</div>
 												<div id="collapse${status.index}${methodStatus.index}" class="collapse" aria-labelledby="heading${status.index}${methodStatus.index}" data-parent="#accordionTag${status.index}">
 													<div class="card-body">
-														<c:if test="${method.operation.deprecated}">
+														<c:if test="${not empty method.operation.deprecated}">
 															<p class="text-muted">Warning: Deprecated</p>
 														</c:if>
-														<c:if test="${method.operation.description}">
+														<c:if test="${not empty method.operation.description}">
 															<p>${method.operation.description}</p>
 														</c:if>
 														<c:if test="${not empty method.operation.parameters }">
