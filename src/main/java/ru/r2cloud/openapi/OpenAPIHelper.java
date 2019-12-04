@@ -11,7 +11,9 @@ import io.swagger.v3.oas.models.Operation;
 import io.swagger.v3.oas.models.PathItem;
 
 public class OpenAPIHelper {
-	
+
+	private static final String DEFAULT_BADGE = "badge-secondary";
+
 	public static List<OperationDetails> getMethodsByTag(OpenAPI openapi, String tagName) {
 		List<OperationDetails> result = new ArrayList<>();
 		for (Entry<String, PathItem> cur : openapi.getPaths().entrySet()) {
@@ -32,11 +34,11 @@ public class OpenAPIHelper {
 
 	public static String getColorByMethod(OperationDetails method) {
 		if (Boolean.TRUE.equals(method.getOperation().getDeprecated())) {
-			return "badge-secondary";
+			return DEFAULT_BADGE;
 		}
 		String methodName = method.getMethodName();
 		if (methodName == null) {
-			return "badge-secondary";
+			return DEFAULT_BADGE;
 		}
 		if (methodName.equals("post")) {
 			return "badge-success";
@@ -47,7 +49,7 @@ public class OpenAPIHelper {
 		} else if (methodName.equals("delete")) {
 			return "badge-danger";
 		} else {
-			return "badge-secondary";
+			return DEFAULT_BADGE;
 		}
 	}
 
@@ -80,4 +82,7 @@ public class OpenAPIHelper {
 		return result;
 	}
 
+	private OpenAPIHelper() {
+		// do nothing
+	}
 }
