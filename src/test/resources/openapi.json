@@ -48,7 +48,103 @@
     }
   ],
   "paths": {
-    "/pet": {
+      "/pet": {
+      "patch": {
+        "tags": [
+          "pet"
+        ],
+        "summary": "Patch pet",
+        "responses": {
+          "200": {
+            "description": "Patch success",
+            "content": {}
+          },
+          "404": {
+            "description": "Pet not found",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "petstore_auth": [
+              "write:pets",
+              "read:pets"
+            ]
+          }
+        ]
+      },
+      "options": {
+        "tags": [
+          "pet"
+        ],
+        "summary": "Options pet",
+        "responses": {
+          "200": {
+            "description": "Options success",
+            "content": {}
+          },
+          "404": {
+            "description": "Pet not found",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "petstore_auth": [
+              "write:pets",
+              "read:pets"
+            ]
+          }
+        ]
+      },
+      "trace": {
+        "tags": [
+          "pet"
+        ],
+        "summary": "Trace pet",
+        "responses": {
+          "200": {
+            "description": "Trace success",
+            "content": {}
+          },
+          "404": {
+            "description": "Pet not found",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "petstore_auth": [
+              "write:pets",
+              "read:pets"
+            ]
+          }
+        ]
+      },
+      "head": {
+        "tags": [
+          "pet"
+        ],
+        "summary": "Check if pet exist",
+        "responses": {
+          "200": {
+            "description": "If exists",
+            "content": {}
+          },
+          "404": {
+            "description": "Pet not found",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "petstore_auth": [
+              "write:pets",
+              "read:pets"
+            ]
+          }
+        ]
+      },
       "put": {
         "tags": [
           "pet"
@@ -1021,7 +1117,8 @@
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int64"
+            "format": "int64",
+            "example": "1"
           },
           "category": {
             "$ref": "#/components/schemas/Category"
@@ -1030,6 +1127,10 @@
             "type": "string",
             "example": "doggie"
           },
+          "weight": {
+          	"type": "number",
+          	"example": "1.23"
+          },          
           "photoUrls": {
             "type": "array",
             "xml": {

@@ -48,6 +48,10 @@ public class OpenAPIHelper {
 			return "badge-warning";
 		} else if (methodName.equals("delete")) {
 			return "badge-danger";
+		} else if (methodName.equals("trace")) {
+			return "badge-dark";
+		} else if (methodName.equals("patch")) {
+			return "badge-info";
 		} else {
 			return DEFAULT_BADGE;
 		}
