@@ -18,10 +18,13 @@ public class SchemaTag extends TagSupport {
 
 	private static final long serialVersionUID = -5848704381004159285L;
 
-	private Schema<?> value;
-	
+	private transient Schema<?> value;
+
 	@Override
 	public int doEndTag() throws JspException {
+		if (value == null) {
+			return EVAL_PAGE;
+		}
 		Writer w = pageContext.getOut();
 		try {
 			JsonFactory jsonFactory = new JsonFactory();

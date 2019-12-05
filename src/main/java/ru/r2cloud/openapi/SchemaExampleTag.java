@@ -25,11 +25,14 @@ public class SchemaExampleTag extends TagSupport {
 
 	private static final long serialVersionUID = -5848704381004159286L;
 
-	private Schema<?> value;
-	private OpenAPI openapi;
+	private transient Schema<?> value;
+	private transient OpenAPI openapi;
 
 	@Override
 	public int doEndTag() throws JspException {
+		if (value == null || openapi == null) {
+			return EVAL_PAGE;
+		}
 		Writer w = pageContext.getOut();
 		try {
 			JsonFactory jsonFactory = new JsonFactory();

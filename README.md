@@ -12,7 +12,7 @@ For a complete reference see the [test](https://github.com/dernasherbrezon/jsp-o
 
 Include dependency:
 
-```
+```xml
 <dependency>
 	<groupId>ru.r2cloud.openapi</groupId>
 	<artifactId>jsp-openapi</artifactId>
