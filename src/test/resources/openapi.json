@@ -1131,6 +1131,9 @@
           	"type": "number",
           	"example": "1.23"
           },          
+          "height": {
+          	"type": "number"
+          },          
           "photoUrls": {
             "type": "array",
             "xml": {
