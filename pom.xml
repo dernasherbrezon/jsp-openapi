@@ -11,7 +11,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<jetty.version>9.4.15.v20190215</jetty.version>
+		<jetty.version>9.4.34.v20201102</jetty.version>
 		<swagger.version>2.1.0</swagger.version>
 	</properties>
 
@@ -58,7 +58,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.10</version>
+			<version>4.13.1</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
