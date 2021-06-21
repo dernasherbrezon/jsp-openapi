@@ -1,4 +1,4 @@
-# jsp-openapi [![Build Status](https://travis-ci.org/dernasherbrezon/jsp-openapi.svg?branch=master)](https://travis-ci.org/dernasherbrezon/jsp-openapi) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ru.r2cloud.openapi%3Ajsp-openapi&metric=alert_status)](https://sonarcloud.io/dashboard?id=ru.r2cloud.openapi%3Ajsp-openapi)
+# jsp-openapi [![Build Status](https://travis-ci.com/dernasherbrezon/jsp-openapi.svg?branch=master)](https://travis-ci.com/dernasherbrezon/jsp-openapi) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ru.r2cloud.openapi%3Ajsp-openapi&metric=alert_status)](https://sonarcloud.io/dashboard?id=ru.r2cloud.openapi%3Ajsp-openapi)
 
 Tag lib for rendering openapi specification. CSS and javascript libraries are not included.
 
