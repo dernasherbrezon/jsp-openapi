@@ -3,7 +3,7 @@
 
 	<groupId>ru.r2cloud.openapi</groupId>
 	<artifactId>jsp-openapi</artifactId>
-	<version>1.3-SNAPSHOT</version>
+	<version>1.3</version>
 	<name>jsp-openapi</name>
 	<description>Tag lib for OpenAPI documentation</description>
 	<inceptionYear>2019</inceptionYear>
@@ -250,7 +250,7 @@
 		<url>https://github.com/dernasherbrezon/jsp-openapi</url>
 		<connection>scm:git:git@github.com:dernasherbrezon/jsp-openapi.git</connection>
 		<developerConnection>scm:git:git@github.com:dernasherbrezon/jsp-openapi.git</developerConnection>
-		<tag>jsp-openapi-1.1</tag>
+		<tag>jsp-openapi-1.3</tag>
 	</scm>
 
 	<issueManagement>
